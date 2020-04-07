@@ -15,6 +15,12 @@
     </sub>
   </p>
 </div>
+
+<div align="center">
+  <br>
+    <img src="./public/screenshot1.png" alt="Screenshot1" width="80%">
+  <br>
+</div>
  
  ---
 
