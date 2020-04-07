@@ -21,6 +21,7 @@ function Home() {
       <Head>
         <title>YouTube Downloader</title>
         <link rel="icon" href="/logo.svg" />
+        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <main>
