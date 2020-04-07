@@ -1,6 +1,9 @@
 import ytdl from "ytdl-core";
+import microCors from "micro-cors";
 
-export default async (req, res) => {
+const cors = microCors();
+
+async function Download(req, res) {
   const { url } = req.query;
   const info = await ytdl.getInfo(url);
   res.setHeader(
@@ -8,4 +11,6 @@ export default async (req, res) => {
     `attachment; filename=${info.title}.mp4`
   );
   ytdl(url, { filter: (format) => format.container === "mp4" }).pipe(res);
-};
+}
+
+export default cors(Download);
