@@ -31,7 +31,12 @@ function Home() {
 
         <p className="description">A simple video downloader</p>
         <form onSubmit={download}>
-          <input ref={input} type="text" placeholder="Video URL ou ID" />
+          <input
+            ref={input}
+            type="text"
+            placeholder="Video URL ou ID"
+            required
+          />
           <button ref={button} type="submit">
             Download
           </button>
