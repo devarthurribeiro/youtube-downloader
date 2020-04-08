@@ -143,7 +143,7 @@ function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           background-color: #ff0000;
-          box-shadow: 3px 3px 8px 0px rgba(255, 0, 0, 0.6);
+          box-shadow: 0px 3px 8px 0px rgba(255, 0, 0, 0.6);
           margin-left: 8px;
           color: #fff;
           cursor: pointer;
