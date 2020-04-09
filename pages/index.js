@@ -1,27 +1,25 @@
-import { useRef } from "react";
-import Head from "next/head";
+import { useRef } from 'react'
+import Head from 'next/head'
 
-const BASE_URL = "https://yt-dw-api.herokuapp.com";
+const BASE_URL = 'https://yt-dw-api.herokuapp.com'
 
 function Home() {
-  const input = useRef();
-  const button = useRef();
+  const input = useRef()
+  const button = useRef()
 
   async function download(e) {
-    e.preventDefault();
-    const url = input.current.value;
-    button.current.disabled = true;
-    window.open(`${BASE_URL}/api/download/v1?url=${url}`);
-    button.current.disabled = false;
-    input.current.value = "";
+    e.preventDefault()
+    const url = input.current.value
+    button.current.disabled = true
+    window.open(`${BASE_URL}/api/download/v1?url=${url}`)
+    button.current.disabled = false
+    input.current.value = ''
   }
 
   return (
     <div className="container">
       <Head>
         <title>YouTube Downloader</title>
-        <link rel="icon" href="/logo.svg" />
-        <link rel="manifest" href="/manifest.json" />
       </Head>
 
       <main>
@@ -172,7 +170,7 @@ function Home() {
         }
       `}</style>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
