@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/devarthurribeiro/RocketApi"><img src="./public/logo.svg" alt="RocketApi.io logo" height="160"></a>
+  <a href="https://github.com/devarthurribeiro/RocketApi"><img src="./public/logo512x512.png" alt="logo" height="160"></a>
   <h1 align="center">YouTube Downloader</h1>
   <br>
   <br>
