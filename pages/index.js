@@ -1,25 +1,32 @@
-import { useRef } from 'react'
-import Head from 'next/head'
+import { useRef } from "react";
+import Head from "next/head";
+import SocialMeta from "../components/socialMeta";
 
-const BASE_URL = 'https://yt-dw-api.herokuapp.com'
+const BASE_URL = "https://yt-dw-api.herokuapp.com";
 
 function Home() {
-  const input = useRef()
-  const button = useRef()
+  const input = useRef();
+  const button = useRef();
 
   async function download(e) {
-    e.preventDefault()
-    const url = input.current.value
-    button.current.disabled = true
-    window.open(`${BASE_URL}/api/download/v1?url=${url}`)
-    button.current.disabled = false
-    input.current.value = ''
+    e.preventDefault();
+    const url = input.current.value;
+    button.current.disabled = true;
+    window.open(`${BASE_URL}/api/download/v1?url=${url}`);
+    button.current.disabled = false;
+    input.current.value = "";
   }
 
   return (
     <div className="container">
       <Head>
         <title>YouTube Downloader</title>
+        <SocialMeta
+          image="/screenshot1.png"
+          title="YTDW - YouTube Downloader"
+          url="https://ytdw.now.sh/"
+          description="download videos from youtube quickly and free of charge."
+        />
       </Head>
 
       <main>
@@ -170,7 +177,7 @@ function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
