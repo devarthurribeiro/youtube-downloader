@@ -8,7 +8,7 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "micro-cors": "^0.1.1",
     "next": "9.3.4",
     "next-pwa": "^2.3.3",
